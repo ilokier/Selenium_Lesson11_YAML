@@ -1,4 +1,4 @@
-package Models;
+package Configuration;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
@@ -11,14 +11,10 @@ import org.openqa.selenium.ie.InternetExplorerOptions;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-public class BrowserEnvironment {
+public class DriverHandle {
     private static Logger log = LoggerFactory.getLogger("BrowserEnvironment.class");
     private WebDriver driver;
     private String browserName;
-
-//    public BrowserEnvironment() {
-//
-//    }
 
     public WebDriver getDriver() {
         this.browserName = System.getProperty("browserName");
